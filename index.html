@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <title>Assignment 03</title>
+  </head>
+  <body>
+    <!--the banner va tieu de-->
+    <div class="banner" id="banner">
+      <img src="./images/banner.jpg" alt="Baner" style="width: 100%" />
+      <div class="centered">
+        <h1>Nguyễn Tấn Đức</h1>
+        <span>Java Developer</span>
+      </div>
+    </div>
+    <!--ket thuc phan banner-->
+    <!-- nav bar-->
+    <section class="nav-bar" id="nav-bar">
+      <nav class="nav-bar container">
+        <a href="#"><i class="fa fa-user" aria-hidden="true"></i>Thông tin</a>
+        <a href="#"><i class="icon-doc-text-inv"></i>Lý lịch</a>
+        <div class="nav-bar Name">
+          <h1>Nguyễn Tấn Đức</h1>
+          <span>Java Developer</span>
+        </div>
+        <a href="#"><i class="icon-mail-alt"></i>Chứng chỉ</a>
+        <a href="#"><i class="icon-star-1"></i>Dự Án</a>
+      </nav>
+    </section>
+    <!--dong the nav-bar-->
+    <!--ghep 2 muc muc tieu va thong tin ca nhan bang the grid -->
+    <section id="about" class="bg-grey" class="row">
+      <div class="grid-container">
+        <div id="target" class="grid-item1">
+          <h3 class="section-title">Mục tiêu nghề nghiệp</h3>
+          <p>
+            Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+            của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+            <b>Fullstack Developer</b>, có thể vận dụng những kiến thức đã được
+            trau dồi và không ngừng học hỏi để phát triển bản thân, cũng như
+            hoàn thành tốt nhất công việc được giao.
+          </p>
+        </div>
+        <div id="info" class="grid-item2" class="bg-grey">
+          <h3 class="section-title">Thông tin cá nhân</h3>
+          <div class="section-content hidden">
+            <li><span>Giới tính</span> : Nam</li>
+            <li><span>Ngày sinh</span> : 28/3/1998</li>
+            <li><span>Điện thoại</span> : (+84) 935684***</li>
+            <li><span>Email</span> : ducntfx21320@funix.edu.vn</li>
+            <li><span>Địa chỉ</span> : Đà Nẵng</li>
+            <li><span>Website</span> : https://abc.tech</li>
+            <div class="icon">
+              <li><i class="icon-twitter"></i></li>
+              <li><i class="icon-facebook"></i></li>
+              <li><i class="icon-gplus"></i></li>
+              <li><i class="icon-linkedin-circled"></i></li>
+            </div>
+          </div>
+          <div class="submit-email">
+            <input type="email" id="email" />
+            <p id="error-email"></p>
+            <button
+              onclick="handleSubmit()"
+              class="btn btn-primary"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--dong the thong tin ca nhan va muc tieu -->
+    <!--the job info dung grid layout tao ra 3 cot 2 dong-->
+    <section id="job-info" class="job-info">
+      <div class="contain">
+        <!--cot 1 dong 1-->
+
+        <div
+          class="kinhnghiem"
+          onmouseover="handleOnmouseOver(this)"
+          onmouseout="handleOnmouseOut(this)"
+        >
+          <div class="top">
+            <h1>Kinh Nghiệm</h1>
+            <i class="ic-toolbox"></i>
+          </div>
+          <class class="bottom hidden">
+            <h4>CÔNG TY PHẦN MỀM ENRICH & CO</h4>
+            <h4>5/2021 - 9/2022</h4>
+            <p>IT Support ,Admin Support</p>
+            <li>Lắp đặt thiết bị máy nạp thẻ cho khách</li>
+            <li>Kết nối thiết bị charge thẻ của khách với System POS</li>
+            <li>
+              Xử lý các vấn đề liên quan đến phần cứng và phần mềm của hệ thống
+            </li>
+            <li>
+              Khắc phục và đưa ra hướng giải quyết lỗi phát sinh trong hệ thống
+            </li>
+          </class>
+          <div class="control-wiew">
+            <button type="button" class="btn btn-warning wiew-more">
+              Wiew more
+            </button>
+          </div>
+        </div>
+
+        <!--dong cot 1-->
+        <!--cot 2 dong 1-->
+
+        <div
+          class="hocvan"
+          onmouseover="handleOnmouseOver(this)"
+          onmouseout="handleOnmouseOut(this)"
+        >
+          <div class="top">
+            <h1>Học vấn</h1>
+            <i class="ic-pencil"></i>
+          </div>
+          <div class="bottom hidden">
+            <h4>ĐẠI HỌC DUY TÂN</h4>
+            <h4>2017-2021</h4>
+            <li>Quản Trị Mạng</li>
+            <li>GPA : 3.0/4</li>
+          </div>
+          <div class="control-wiew">
+            <button type="button" class="btn btn-warning wiew-more">
+              Wiew more
+            </button>
+          </div>
+        </div>
+
+        <!--dong cot 2-->
+        <!--cot 3 dong 1-->
+        <div
+          class="hoatdong"
+          onmouseover="handleOnmouseOver(this)"
+          onmouseout="handleOnmouseOut(this)"
+        >
+          <div class="top">
+            <h1>Hoạt động</h1>
+            <i class="ic-toolbox"></i>
+          </div>
+          <div class="bottom hidden">
+            <h4>CLB : White Leopard</h4>
+            <h4>2017-2022</h4>
+            <li>Trưởng CLB</li>
+          </div>
+          <div class="control-wiew">
+            <button type="button" class="btn btn-warning wiew-more">
+              Wiew more
+            </button>
+          </div>
+        </div>
+        <!--dong cot 3-->
+        <!--cot 1 dong 2-->
+        <div
+          class="sothich"
+          onmouseover="handleOnmouseOver(this)"
+          onmouseout="handleOnmouseOut(this)"
+        >
+          <div class="top">
+            <h1>Sở thích</h1>
+            <i class="ic-telescope"></i>
+          </div>
+          <div class="bottom hidden">
+            <div class="bottomA">
+              <img src="./images/Screenshot 2023-03-07 095018.png" alt="a" />
+              <img src="./images/Screenshot 2023-03-07 095032.png" alt="b" />
+              <img src="./images/Screenshot 2023-03-07 095045.png" alt="c" />
+            </div>
+            <div class="nd">
+              <p>Game</p>
+              <p>Du lịch</p>
+              <p>Nghe nhạc</p>
+            </div>
+          </div>
+          <div class="control-wiew">
+            <button type="button" class="btn btn-warning wiew-more">
+              Wiew more
+            </button>
+          </div>
+        </div>
+        <!--dong cot 1 dong 2-->
+        <!--cot 2 dong 2-->
+
+        <div
+          class="ngonngu"
+          onmouseover="handleOnmouseOver(this)"
+          onmouseout="handleOnmouseOut(this)"
+        >
+          <div class="top">
+            <h1>Ngôn ngữ</h1>
+            <i class="ic-mic"></i>
+          </div>
+          <div class="bottom hidden">
+            <h4>Tiếng Anh - TOEIC 6.0</h4>
+            <span class="a"></span>
+            <span class="a"></span>
+            <span class="b"></span>
+          </div>
+          <div class="control-wiew">
+            <button type="button" class="btn btn-warning wiew-more">
+              Wiew more
+            </button>
+          </div>
+        </div>
+        <!--dong cot 2 dong 2-->
+        <!--cot 3 dong 2-->
+        <div
+          class="kynang"
+          onmouseover="handleOnmouseOver(this)"
+          onmouseout="handleOnmouseOut(this)"
+          class="parent"
+        >
+          <div class="top">
+            <h1>Kỹ năng</h1>
+            <div class="fa">
+              <i class="fa fa-wrench" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="bottom hidden">
+            <h4>HTML</h4>
+            <span class="a"></span>
+            <span class="a"></span>
+            <span class="a"></span>
+            <span class="b"></span>
+
+            <h4>Java</h4>
+            <span class="a"></span>
+            <span class="a"></span>
+            <span class="a"></span>
+            <span class="b"></span>
+
+            <h4>Làm việc nhóm</h4>
+            <span class="a"></span>
+            <span class="a"></span>
+            <span class="a"></span>
+            <span class="a"></span>
+
+            <h4>Thuyết Trình</h4>
+            <span class="a"></span>
+            <span class="a"></span>
+            <span class="a"></span>
+            <span class="b"></span>
+          </div>
+          <div class="control-wiew">
+            <button type="button" class="btn btn-warning wiew-more">
+              Wiew more
+            </button>
+          </div>
+        </div>
+        <!--dong cot 3 dong 2-->
+      </div>
+    </section>
+    <!--the chung chi-->
+    <section id="certificate">
+      <div class="containerC">
+        <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
+        <div class="cot">
+          <div class="left">
+            <div class="cot1">
+              <img
+                src="./images/Cert_WEB.png"
+                alt="chungchiweb"
+                width="150px"
+                height="150px"
+              />
+            </div>
+            <div class="cot2">
+              <h3>Chứng chỉ lập trình WEB-FUNIX</h3>
+              <li>Chứng chỉ thuộc chương trình CCDN</li>
+              <li>GPA: 8.8/10</li>
+            </div>
+          </div>
+          <div class="right">
+            <div class="cot1">
+              <img
+                src="./images/Cert_PRF.png"
+                alt="chungchiphanmem"
+                width="150px"
+                height="150px"
+              />
+            </div>
+            <div class="cot2">
+              <h3>Chứng chỉ lập trình JAVA-FUNIX</h3>
+              <li>Chứng chỉ thuộc chương trình CCDN</li>
+              <li>GPA: 9/10</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--dong the chung chi-->
+    <!--the du an-->
+
+    <section id="project">
+      <div class="containerD">
+        <h1 class="section-title">Dự án</h1>
+        <div class="PRJ">
+          <div class="PRJ1">
+            <img
+              src="./images/project_1.png"
+              alt="cvcanhan"
+              width="100%"
+              height="55%"
+            />
+            <div>
+              <p class="personalCV">CV CÁ NHÂN</p>
+            </div>
+            <table class="table">
+              <tr>
+                <th>
+                  <p>
+                    2023 <i class="icon-user"></i>FUNIX
+                    <i class="fa fa-search" aria-hidden="true"></i>Developer
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <div class="dong2">
+                    <h4>Mô tả :</h4>
+                    <p>
+                      Trang WEB CV cá nhân Online, gồm thông tin cá nhân cũng
+                      như kỹ năng nghề nghiệp
+                    </p>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <div class="dong2">
+                    <h4>Nhiệm Vụ :</h4>
+                    <p>
+                      - Phát triển code - Rewiew code - Tối ưu code - Xử lý lỗi
+                    </p>
+                  </div>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <div class="dong2">
+                    <h4>Công nghệ :</h4>
+                    <p>- HTML, CSS</p>
+                  </div>
+                </th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--dong the du an-->
+    <!-- phan footer : muc lien he-->
+    <section id="footer" class="footer">
+      <div class="fcontainer">
+        <li>
+          <a href="https://www.facebook.com/tanduc.nguyen.927"
+            ><i class="icon-facebook"></i>Facebook</a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/duc-nguyen-7034361b7/"
+            ><i class="icon-linkedin-circled"></i>Linked</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/germanere"
+            ><i class="icon-github-circled"></i>Github</a
+          >
+        </li>
+      </div>
+    </section>
+    <!--dong phan footer-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
